@@ -1,0 +1,205 @@
+body{
+	width: 90%;
+	margin: 0 auto;
+	background-color: #0d0d0d;
+}
+nav li{ /*makes nav list in line at top for navigation header*/
+	display: inline-block;
+	padding: 3.2%;
+	margin: 1.3%;
+}
+nav ul{
+	background-color: #809fff;
+	box-shadow: inset 0 0 200px #0d0d0d;
+	border-radius: 12px;
+}
+nav li a{ /*makes buttons out of nav list so they are easier to press*/
+	display: block;
+	color: white;
+	font-size: 10px;
+	text-decoration: none;
+}
+nav li:hover{ /*shows user is hovering over nav buttons*/
+	background-color: black;
+	box-shadow: inset 0 0 20px #809fff;
+	text-decoration: underline;
+}
+header img{ /*main image on every page.*/
+	float: left;
+	max-height: 430px;
+	width: 20%;
+	max-width: 40%;
+	height: auto;
+	padding-top: 2%;
+	padding-right: 1%;
+}
+header h1{ /*main header style on each page*/
+	color: #809fff;
+	font-size: 3vw;
+	margin: 0 auto;
+}
+section{ /*section font set to flexible. padding keeps the text someone center with flexible pages*/
+	display: block;
+	max-width: 90%;
+	padding-left: 22%;
+	padding-right: 10%;
+}
+section p{ /*font color and size for parragraphs*/
+	color: white;
+	font-size:12px;
+}
+section img{ /*image setting for all main body images on site, except "grey image" on tour page*/
+	width: 60%;
+	height: auto;
+	border-radius: 20px;
+	margin-left: 18%;
+}
+section h1{ /*header for "other projects page" for band names*/
+	color:#8600b3;
+	font-size: 1.8em;
+	text-align: center;
+}
+section h2{ /*header for shop items*/
+	color: #8600b3;
+	font-size: .8em;
+	float: left;
+	margin-left: 10%;
+}
+section h3{ /*header for tour dates because h1 and h2 were having problems with table.*/
+	color:#b30086;
+	display: inline-block;
+	font-size: 3em;
+	margin-left: 28%;
+	margin-top: 40%;
+}
+blockquote{ /*address information in the footer on every page*/
+	float: left;
+	color: white;
+	font-size: 15px;
+}
+footer{
+	margin-top: 5%;
+}
+.main{ /*default text size for main portions of parragraphs*/
+	font-size: 1.3em;
+}
+.shop{ /*class for shop section on "shop" page*/
+	margin-left: 18%;
+	width: 30%;
+	height: auto;
+	border-radius: 20px;
+}
+div li{ /*general list settings for shop. removed bullets and sized font*/
+	color: white;
+	list-style-type: none;
+	font-size: 12px;
+}
+.video{ /*video settings on unique to "index" page video*/
+	border-bottom: 3px solid #809fff;
+}
+.iframe-container{ /*container for youtube/spotify embedded code*/
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
+}
+.iframe-container iframe{ /*scaling for youtube/spotify embedded code so it mainains shape*/
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.caption{ /*captions for photos on "biography" and "other projects" pages*/
+	font-style: italic;
+	font-size: .5em;
+	margin-left: 20%;
+}
+.price{ /*price styles on "Shop" page*/
+	margin-top: 2%;
+	margin-left: 36%;	
+}
+.grid-container{ /*container for flex box table on "tour" page*/
+	display: flex;
+	align-content: space-between;
+}
+.grid-item{ /*styling of flexbox table font and table on "Tour" page*/
+	flex: 1;
+	align-content: space-between;
+	color: white;
+	border: solid #809fff;
+	font-size: 1em;
+
+}
+.contact{ /*styling for contact info on "contact" page*/
+	font-size: 1em;
+	display: block;
+	font-style: italic;
+	padding:2%;
+}
+.contact:nth-child(3){ /*padding on last contact block to space the footer out more*/
+	padding-bottom: 40%;
+}
+footer ul a{ /*styling for footer list*/
+	font-size: .7em;
+	color: white;
+	display: block;
+	text-decoration: none;
+	border-radius: 4px;
+	border: 3px solid #809fff;
+	float: right;
+	background-color: #007acc;
+}
+@media screen and (max-width: 615px){ /*table adjustments and "grey-image" adjustment for under 615px*/
+	.grid-container{
+	}
+	.grid-item{
+		width: 100%;
+		margin:0 0 0 0;
+		font-size: 14px;
+	}
+	.grey-image{
+		margin-left: 20%;
+	}
+}
+@media screen and (min-width: 1120px){ /*text and footer adjustments for 1120-1451px*/
+	section p{ 
+		font-size: 1em;
+	}
+	footer ul a{
+		font-size: 15px;
+	}
+	div li{
+		font-size: 2em;
+	}
+	section h2{
+		font-size: 2em;
+	}
+}
+@media screen and (min-width: 1451px){ /*navigation header adjustments for 1451-1584px*/
+	nav li a{
+	font-size: 1em;
+	}
+}
+@media screen and (min-width:1584px){ /*navigation header adjustments for 1584-1726px*/
+	nav li a{
+		font-size:1.1em; 
+	}
+}
+@media screen and (min-width:1726px){ /*navigation header adjustments, captions, and "Tour Dates" header for 1726-full screen*/
+	nav li a{
+		font-size: 1.2em;
+	}
+	.caption{
+		font-size: 12px;
+	}
+	section h3{
+		margin-top: 0%;
+	}
+}
+
+
+
+
+
+
